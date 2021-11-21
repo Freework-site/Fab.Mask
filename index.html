@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Fabric Mask WebPage</title>
+</head>
+<body>
+    <section>
+        <header>
+            <div class="logo">
+               <h1>fab.Mask</h1>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                        <a href="#">Shop</a>
+                        <a href="#">Explore</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="cart_icon">
+                <i class="fas fa-search"></i>
+                <i class="fas fa-shopping-basket"></i>
+            </div>
+        </header>
+
+        <div class="main_container">
+            <div class="products">
+                <div class="products_images">
+                    <img src="front.png" onmouseenter="changeImageSrc('front.png')">
+                    <img src="side.png" onmouseenter="changeImageSrc('side.png')">
+                    <img src="side2.png" onmouseenter="changeImageSrc('side2.png')">
+
+                    <div class="line">
+                        <h3>Gallery</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="display">
+                <img src="front.png" class="mask">
+                <div class="shadow"></div>
+            </div>
+            <div class="content">
+                <div class="headings">
+                    <h1>FABRIC</h1>
+                    <h2>Face Mask</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima reprehenderit commodi cum deleniti est quam ullam rerum unde natus repellat. Quisquam a deserunt aliquid? Aperiam?</p>
+                </div>
+                <div class="e_commerce">
+                    <div class="quantity">
+                        <h2>Quantity</h2>
+                        <div class="buttons">
+                            <button id="add" value="+">+</button>
+                            <button id="quantity">0</button>
+                        </div>
+                    </div>
+                    <div class="addtocart">
+                      <button class="cart">Add To Cart</button> 
+                    </div>
+                    
+                </div>
+                </div>
+               
+           
+        </div>
+    </section>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+<script type="text/javascript">
+	VanillaTilt.init(document.querySelector(".mask"), {
+		max: 20,
+		speed: 400
+	});
+    </script>
+    <script src="script.js">
+        
+    </script>
+</body>
+</html>
